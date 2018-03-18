@@ -33,7 +33,7 @@ class Base {
         double r = Math.random();
         if (r < 0.1) {
             fail("oops");
-        // Cambiamos el umbral para disparar Jenkins, again    
+        // Cambiamos el umbral para disparar Jenkins, again ...   
         } else if (r < 0.11) {
             throw new AssumptionViolatedException("skipping");
         }
